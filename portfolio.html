@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <link rel="stylesheet" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fb2b433a4d.js" crossorigin="anonymous"></script>
+
+        <title>portfolio</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+              <nav>
+                  <img src="imagesfile/r-high-resolution-logo.png" class="logo">
+                  <ul id="sidemenu">
+                      <li><a href="#header">Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                  </ul>
+                  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </nav>  
+              <div class="intro-container">
+                <div class="header-text">
+                    <p>Web developer</p>
+                    <h1>Hi, I'm <span>Renad</span><br>From Saudi Arabia</h1>
+                </div>
+                <div class="intro-photo">
+                    <img src="imagesfile/ChatGPT Image Apr 13, 2025, 12_38_37 PM.png">
+                </div> 
+              </div>
+            </div>
+          </div>
+          <!-- ----------about--------- -->
+          <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="imagesfile/ChatGPT Image Apr 13, 2025, 01_40_21 PM.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p class="about-text">
+                            Hi! I'm a 22-year-old aspiring full-stack developer with a passion for building web applications and creating clean,
+                            user-friendly interfaces. I started my programming journey in August 2023, beginning with Python and quickly expanding into HTML, CSS,
+                            and JavaScript to bring my ideas to life on the web. Along the way, I've worked with Flask to develop dynamic web apps and used SQL to
+                            manage backend databases. My current focus is on becoming a full-stack developer—someone who can build everything from the front-end UI 
+                            to the back-end logic and database integration. i'm always learning, experimenting, and pushing myself to grow as a developer.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tap-links active-link" onclick="opentap('skills')">Skills</p>
+                            <p class="tap-links" onclick="opentap('education')">Education</p>
+                        </div>
+                        <div class="tap-contents active-tap" id="skills" style="display: block;">
+                            <ul>
+                                <li><span>UI Design</span><br>Designing web interfaces with HTML, CSS</li>
+                                <li><span>Web Development</span><br>Building web applications</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tap-contents" id="education" style="display: none;">
+                            <ul>
+                                <li><span>BSc in Computer Science</span><br>Started in January 2024 - Ongoing <br>Studying at the International University of Applied Sciences, Germany. <br>Learning programming, web development, and building cool stuff with Python, HTML, and CSS 💻✨</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+<!----------------------services---------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Frontend Website Development</h2>
+                <p>I create responsive user interfaces using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div>
+                <h2>Flask Web Apps</h2>
+                <p>I've built dynamic web applications using Flask and Python for learning and practice.</p>
+            </div>
+            <div>
+                <h2>Database Handling</h2>
+                <p>I can design and interact with databases using SQL and Flask-SQLAlchemy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfoilio---------------------->
+
+<div id="portfolio"> 
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imagesfile/Screenshot 1446-10-17 at 10.17.54 AM.png" alt="">
+                <div class="layer">
+                    <h3>Google-like Search Pages</h3>
+                    <p>
+                        This project consists of three distinct HTML pages mimicking popular Google features:                  
+                        Google Search: A simple, centered search bar allowing users to search the web on Google.                        
+                        Google Images Search: A page designed to replicate Google Images' search functionality.                       
+                        Advanced Search: A form-based page that enables users to refine their Google search queries with advanced options.                      
+                        Each page uses a clean, responsive layout and includes basic HTML, CSS for styling, and JavaScript for handling form submissions and search redirects.</p>
+                    <a href="https://github.com/renad03-20/google-like-search-page.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imagesfile/Screenshot 1446-10-17 at 10.16.31 AM.png" alt="">
+                <div class="layer">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <p>
+                        This project is a web-based implementation of the classic Rock, Paper, Scissors game.
+                         Users can play against the computer by selecting one of the three options: Rock, Paper, 
+                         or Scissors. The game logic determines the winner, and the player's score (wins, losses, ties)
+                          is tracked and saved in the browser using localStorage. The score can be reset at any time, and
+                           interactive buttons enhance the user experience. The layout is simple, clean, and responsive, making 
+                           it easy to play on any device.</p>
+                    <a href="https://github.com/renad03-20/HTMLgame.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imagesfile/weather.png" alt="">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>This app fetches and displays real-time weather
+                         data using a clean graphical interface. It allows
+                          users to view the current temperature and weather
+                           conditions for any location. Designed with a minimal
+                            layout and responsive components using PyQt5, it showcases
+                             my ability to build GUI applications with live data integration.</p>
+                    <a href="https://github.com/renad03-20/weather_app.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/renad03-20" class="btn"> See More</a>
+    </div>
+</div>
+
+<!----------------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row"> 
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope-open"></i> studentrenad@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +966546401636</p>
+                <div class="social-icons">
+                    <a href="https://www.tiktok.com/@renadstudy?_t=ZS-8vWO43nQTNl&_r=1"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/renad03-20"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <!-- here will be a link for my sv later-->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © 2025 Renad. <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+    </div>
+</div>
+        <script>
+            var tabLinks = document.getElementsByClassName('tap-links');
+            var tabContents = document.getElementsByClassName('tap-contents');
+            
+            function opentap(tapname) {
+                for (var tabLink of tabLinks) {
+                    tabLink.classList.remove("active-link");
+                }
+                for (var tabContent of tabContents) {
+                    tabContent.style.display = "none";
+                    tabContent.classList.remove("active-tap");
+                }
+                event.currentTarget.classList.add("active-link");
+                var activeTab = document.getElementById(tapname);
+                activeTab.style.display = "block";
+                activeTab.classList.add("active-tap");
+            }
+            function openmenu(){
+
+            }
+            function closemenu(){
+        
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }   
+       </script>
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzz9hK8MS36-TQ54VvZgVWiFPmz6ChntmANJOOcFPFvSu7Hv4Cx6yAjn3FeE058siqgYw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully! I'll get back to you soon.";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>
